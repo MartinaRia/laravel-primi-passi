@@ -1,4 +1,4 @@
-@extends('template')
+@extends('layouts.template')
 
 @section('header-title')
   <h1>Welcome</h1>

@@ -36,7 +36,7 @@
         <div class="side-container">
           <nav>
             <ul>
-              <a href="/"><li>HOME</li></a>
+              <a href= "/"><li>HOME</li></a>
               <a href="about"><li>ABOUT</li></a>
               <a href="contacts"><li>CONTACT</li></a>
             </ul>
@@ -55,7 +55,7 @@
 
     <footer>
       <div class="footer-container">
-        @include('footer')
+        @include('components.footer')
       </div>
     </footer>
   </body>
