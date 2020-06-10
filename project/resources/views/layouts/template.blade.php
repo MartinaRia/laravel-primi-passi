@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     {{-- js --}}
-    <script type="text/javascript" src="js/app.js"> </script>
+    <script type="text/javascript" src=" {{asset('js/app.js') }}"> </script>
     {{-- font --}}
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     {{-- css --}}
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <title>Tema Martina</title>
   </head>
 
@@ -19,7 +19,7 @@
 
         {{-- left --}}
         <div class="logo-container flex-container">
-          <img src="img/Logo-M.png" alt="logo" width="80px" height="80px">
+          <img src="{{asset('img/Logo-M.png')}}" alt="logo" width="80px" height="80px">
         </div>
 
         {{-- right --}}
@@ -37,8 +37,9 @@
           <nav>
             <ul>
               <a href= "/"><li>HOME</li></a>
-              <a href="about"><li>ABOUT</li></a>
-              <a href="contacts"><li>CONTACT</li></a>
+              <a href="{{route('about')}}"><li>ABOUT</li></a>
+              <a href="{{route('contacts')}}"><li>CONTACT</li></a>
+              <a href="{{route('pastatest')}}"><li>PASTA CATALOGUE</li></a>
             </ul>
           </nav>
         </div>
