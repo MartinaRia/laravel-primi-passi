@@ -158,3 +158,19 @@ main{
   max-width: 100%;
   margin: 5px auto;
 }
+
+.numbers-display{
+  flex-wrap: wrap;
+}
+.number-container{
+  padding: 10px 15px;
+  background: $thin-color;
+  border-radius: 4px;
+  margin: 2px;
+}
+
+.input-container{
+  flex-wrap: nowrap;
+  padding: 10px;
+  margin: 10px;
+}

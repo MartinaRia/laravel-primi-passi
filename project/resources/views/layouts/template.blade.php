@@ -40,6 +40,7 @@
               <a href="{{route('about')}}"><li>ABOUT</li></a>
               <a href="{{route('contacts')}}"><li>CONTACT</li></a>
               <a href="{{route('pastatest')}}"><li>PASTA CATALOGUE</li></a>
+              <a href="{{route('numbers')}}"><li>NUMBERS</li></a>
             </ul>
           </nav>
         </div>

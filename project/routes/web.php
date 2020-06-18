@@ -54,3 +54,37 @@ Route::get('/pastalinks/{id}', function ($id) {
 
     return view('pastalinks', compact('card'));
 })->name('pastalinks');
+
+Route::get('/numbers10', function () {
+  $min = 1;
+  $max = 10;
+
+    return view('numbers', compact('min', 'max'));
+})->name('numbers');
+
+Route::get('/numbers100', function () {
+  $min = 1;
+  $max = 100;
+
+    return view('numbers', compact('min', 'max'));
+})->name('numbers');
+
+Route::get('/usernumbers/{num}', function ($num) {
+
+  $min = 1;
+  $max = $num;
+
+    return view('usernumbers', compact('min', 'max'));
+})->name('usernumbers');
+
+
+// use Illuminate\Http\Request;
+// Route::get('/usernumbers/{num}', function (Request $request, $num) {
+//
+//   dd($request->all());
+//
+//   $min = 1;
+//   $max = $num;
+//
+//     return view('usernumbers', compact('min', 'max'));
+// })->name('usernumbers');
